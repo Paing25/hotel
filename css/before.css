@@ -1,0 +1,31 @@
+.square::before{
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    display: block;
+    width: calc(100% + 4px);
+    height: calc(100% - 10px);
+    border: 1px solid #ab916c;
+    content: "";
+    pointer-events: none;
+    
+}
+
+.b-ani::before{
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ab916c;
+    content: "";
+    transition:  0.3s ease;
+    transform-origin: 0 0;
+   
+}
+
+.b-ani:hover::before{
+    transform: scaleX(0);
+}
